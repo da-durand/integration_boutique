@@ -2,7 +2,7 @@ $header-container-width : 20%;
 $padding-content : 0 4rem;
 
 header{
-    background: brown;
+    background: #2a1500;
     color: white;
     height: 100vh;
     text-align: right;
@@ -16,6 +16,7 @@ header{
             width: $header-container-width;
             justify-content: space-between;
             color: white;
+            width: 20%;
         }
         i{
             position: absolute;
@@ -54,21 +55,50 @@ main{
     }
     .products{
         padding: $padding-content;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+
     }
 }
 
 footer{
     display: flex;
     justify-content: space-between;
-    background: blue;
+    background: #0a3958;
     color: white;
     padding: $padding-content;
 }
 
-@media screen and (max-width : 780px){
-
+@media screen and (max-width : 740px){
+    header nav ul{
+        width: 70%;
+    }
     footer{
         flex-direction: column;
     }
+    .btn{
+        font-size: 0.8rem;
+        padding: 5px 38px 5px 38px;
+        
+    }
+    header .header-container .title-container{
+        width: 100%;
+    }
+    .products{
+        padding: 0;
+         div img{
+        width: 20rem;
+         }
+    }
 
+}
+@media screen and(min-width:768px) and (max-width:1024px){
+   header nav ul{
+        width: 70%;
+    }
+    header .header-container .title-container{
+        width: 50%;
+    }
 }
