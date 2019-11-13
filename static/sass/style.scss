@@ -1,5 +1,4 @@
-$header-container-width : 20%;
-$padding-content : 0 4rem;
+@import "varlist";
 
 header{
     background: #2a1500;
@@ -57,9 +56,22 @@ main{
         padding: $padding-content;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-between; 
 
+        .on-sale{
+            @include card(rgb(145, 145, 0));
+        }
 
+        .sold-out{
+            @include card(rgb(105, 26, 26));
+            position: relative;
+
+            .barres{
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
     }
 }
 

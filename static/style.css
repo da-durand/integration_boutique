@@ -43,6 +43,16 @@ main .products {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; }
+  main .products .on-sale h3 {
+    color: #919100; }
+  main .products .sold-out {
+    position: relative; }
+    main .products .sold-out h3 {
+      color: #691a1a; }
+    main .products .sold-out .barres {
+      position: absolute;
+      top: 0;
+      left: 0; }
 
 footer {
   display: flex;

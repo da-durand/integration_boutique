@@ -1,0 +1,8 @@
+$header-container-width : 20%;
+$padding-content : 0 4rem;
+
+@mixin card($color) {
+    h3{
+        color: $color;
+    }
+}
